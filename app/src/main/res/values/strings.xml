@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Travel Savior</string>
+    <string name="bg_main_content_description_">Main background image - a car in a street</string>
+    <string name="main_title">Travel Savior</string>
+    <string name="main_title_description">A new way to program your travel and safe money!</string>
+    <string name="main_button_title">Press to continue</string>
 </resources>

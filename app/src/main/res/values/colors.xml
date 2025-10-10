@@ -2,4 +2,11 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="sky_blue">#AEE1F9</color>
+    <color name="grass_green">#77C68A</color>
+    <color name="road_green">#234C43</color>
+    <color name="car_yellow_orange">#F7B733</color>
+    <color name="city_blue">#4689A3</color>
+    <color name="deep_blue">#1F3B4D</color>
+    <color name="cloud_white">#F5F9FA</color>
 </resources>
