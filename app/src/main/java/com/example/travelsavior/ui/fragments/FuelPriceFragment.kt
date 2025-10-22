@@ -1,0 +1,42 @@
+package com.example.travelsavior.ui.fragments
+
+import android.os.Bundle
+import androidx.fragment.app.Fragment
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.core.widget.addTextChangedListener
+import androidx.fragment.app.activityViewModels
+import com.example.travelsavior.databinding.FragmentFuelPriceBinding
+import com.example.travelsavior.ui.viewmodels.TravelViewModel
+
+class FuelPriceFragment : Fragment() {
+    private var _binding: FragmentFuelPriceBinding? = null;
+    private val binding get() = _binding!!;
+
+    private val viewModel: TravelViewModel by activityViewModels()
+
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+        _binding = FragmentFuelPriceBinding.inflate(inflater, container, false)
+        return binding.root;
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        val editText = binding.fragFuelPriceEditText
+
+        editText.addTextChangedListener {
+            viewModel.setPrice(it.toString().toDoubleOrNull() ?: 0.0)
+        }
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        _binding = null
+    }
+}

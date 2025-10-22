@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frag_avarage_container"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_fragments"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    tools:context=".ui.fragments.ResultFragment">
+
+    <TextView
+        android:id="@+id/frag_result_title"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/frag_result_title"
+        style="@style/Description"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/frag_result_value"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/frag_result_value"
+        style="@style/AlternativeTitle"
+        android:layout_marginTop="28dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frag_result_title"
+        />
+
+    <TextView
+        android:id="@+id/frag_result_description"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/frag_result_description"
+        style="@style/Description"
+        android:layout_marginTop="28dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frag_result_value"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,6 +6,12 @@
         <item name="android:textColor">@color/road_green</item>
     </style>
 
+    <style name="FragsTitle">
+        <item name="android:fontFamily">@font/archivo_black</item>
+        <item name="android:textSize">34sp</item>
+        <item name="android:textColor">@color/road_green</item>
+    </style>
+
     <style name="Description">
         <item name="android:fontFamily">@font/archivo_regular</item>
         <item name="android:textSize">16sp</item>

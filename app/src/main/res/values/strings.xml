@@ -4,4 +4,18 @@
     <string name="main_title">Travel Savior</string>
     <string name="main_title_description">A new way to program your travel and safe money!</string>
     <string name="main_button_title">Press to continue</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="frag_price_title">Enter the fuel price (per liter)</string>
+    <string name="frag_price_initial_value">1</string>
+    <string name="frag_distance_title">Enter the total distance of your trip</string>
+    <string name="frag_avarage_title">Enter your car\'s avarage fuel consumption</string>
+    <string name="title_warning_fuel_price_empty">The Fuel Price is Empty!</string>
+    <string name="title_warning_distance_empty">The Distance is Empty!</string>
+    <string name="title_warning_avarage_empty">The Avarage Consumption is Empty!</string>
+    <string name="description_warning_empty">Please, enter a value to continue.</string>
+    <string name="frag_result_title">Your Travel Result:</string>
+    <string name="frag_result_value">%1$s R$</string>
+    <string name="frag_result_description">Its a $%1$s travel</string>
+
+
 </resources>

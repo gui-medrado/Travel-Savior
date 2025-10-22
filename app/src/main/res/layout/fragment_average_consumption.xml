@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frag_average_container"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_fragments"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    tools:context=".ui.fragments.AverageConsumptionFragment">
+
+<TextView
+    android:id="@+id/frag_avarage_title"
+
+    style="@style/FragsTitle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/frag_avarage_title"
+    android:textAlignment="center"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<EditText
+    android:id="@+id/frag_avarage_editText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:inputType="numberDecimal"
+    style="@style/FragsTitle"
+    android:hint="@string/frag_price_initial_value"
+    android:autofillHints="1"
+    android:background="@drawable/bg_edit_input"
+    android:paddingVertical="20dp"
+    android:paddingHorizontal="30dp"
+    android:layout_marginTop="20dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/frag_avarage_title"
+    tools:ignore="LabelFor" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

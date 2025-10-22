@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content_nav_graph"
+    app:startDestination="@id/fuelPriceFragment"
+    >
+
+    <fragment
+        android:id="@+id/fuelPriceFragment"
+        android:name="com.example.travelsavior.ui.fragments.FuelPriceFragment"
+        android:label="fragment_fuel_price"
+        tools:layout="@layout/fragment_fuel_price" >
+        <action
+            android:id="@+id/action_fuelPriceFragment_to_distanceFragment"
+            app:destination="@id/distanceFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/distanceFragment"
+        android:name="com.example.travelsavior.ui.fragments.DistanceFragment"
+        android:label="fragment_distance"
+        tools:layout="@layout/fragment_distance" >
+        <action
+            android:id="@+id/action_distanceFragment_to_avarageConsumptionFragment"
+            app:destination="@id/avarageConsumptionFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/avarageConsumptionFragment"
+        android:name="com.example.travelsavior.ui.fragments.AverageConsumptionFragment"
+        android:label="fragment_avarage_consumption"
+        tools:layout="@layout/fragment_average_consumption" >
+        <action
+            android:id="@+id/action_avarageConsumptionFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.example.travelsavior.ui.fragments.ResultFragment"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result" >
+        <action
+            android:id="@+id/action_resultFragment_to_fuelPriceFragment"
+            app:destination="@id/fuelPriceFragment" />
+    </fragment>
+
+
+</navigation>
